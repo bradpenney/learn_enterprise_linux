@@ -7,7 +7,7 @@ draft: false
 ## A Self-Documenting Operating System
 One of the nicest things about Linux is that it is largely self-documented.  If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), its very likely that the operating system itself will provide the answers.
 
-[Using the Manual Pages]({{< ref "/usingTheManPages.md" >}})
+[Finding Help in Linux]({{< ref "/findingHelpInLinux.md" >}})
 
 
 ## Command Line Basics

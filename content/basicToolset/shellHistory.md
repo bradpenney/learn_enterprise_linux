@@ -8,6 +8,6 @@ Most [Command Line Shells]({{< ref "/shells.md" >}}) have a built-in feature to 
 
 To view commands that have been run, issue the `history` command.  These are stored in the `~/.bash_history` file.  
 
-{{< figure src="/images/bashHistory.png" caption="Sample BASH History">}}
+![Bash History](https://brad_penney.gitlab.io/learn_enterprise_linux/images/bashHistory.png title="Sample BASH History")
 
 The file size is limited based by two environment variables - `HISTSIZE` and `HISTFILESIZE`.  These are declared in a couple of different places depending on this distribution in question.  In RHEL family distributions, `/etc/profile` has a default value of 1,000 for `HISTSIZE`, and in the Debian family, each user inherits a `HISTFILESIZE` of 2,000 and a `HISTSIZE` of 1,000 from the `/etc/skel/.bashrc`
