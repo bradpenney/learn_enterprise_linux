@@ -1,7 +1,7 @@
 ---
 title: "Basic Toolset for Enterprise Linux"
 date: 2023-03-12T19:25:47-03:00
-draft: true
+draft: false 
 ---
 
 ## The Self-Documenting Operating System
