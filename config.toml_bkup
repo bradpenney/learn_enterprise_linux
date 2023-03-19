@@ -1,0 +1,70 @@
+baseurl      = "localhost"
+title        = "Learn Enterprise Linux"
+languageCode = "en-us"
+theme        = "hello-4s3ti"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  hometitle = "Learn Enterprise Linux"
+
+  # Subtitle for home
+  homeSubtitle = "Exploring Critical Linux Skills"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "Exploring Critical Enterprise Linux Skills"
+  keywords = "linux, enterprise"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "Learn Enterprise Linux"
+    subtitle = "Exploring Critical Enterprise Linux Skills"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "learn_enterprise_linux"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "/basicToolset"
+    name       = "/basicToolset"
+    url        = "/basicToolset"
+  [[menu.main]]
+    identifier = "/everydayAdmin"
+    name       = "/everydayAdmin"
+    url        = "/everydayAdmin"
+  [[menu.main]]
+    identifier = "/systemd"
+    name       = "/systemd"
+    url        = "/systemd"
+  [[menu.main]]
+    identifier = "/selinux"
+    name       = "/selinux"
+    url        = "/selinux"
+  [[menu.main]]
+    identifier = "/scripting"
+    name       = "/scripting"
+    url        = "/scripting"

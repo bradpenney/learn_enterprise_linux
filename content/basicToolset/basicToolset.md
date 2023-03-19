@@ -1,0 +1,28 @@
+---
+title: "Basic Toolset for Enterprise Linux"
+date: 2023-03-12T19:25:47-03:00
+draft: true
+---
+
+## The Self-Documenting Operating System
+One of the nicest things about Linux is that it is largely self-documented.  If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), its very likely that the operating system itself will provide the answers.
+
+[Using the Manual Pages]({{< ref "/usingTheManPages.md" >}})
+
+[Generating Manual Pages]({{< ref "/generatingManPages.md" >}})
+
+## Command Line Basics
+The Command Line (CLI) may be a bit intimidating for those coming from a more Graphical User Interface (GUI) background.  In time, many users find the the CLI is actually a very comfortable and powerful way to get difficult things done!
+
+[Enterprise Command Line Shells]({{< ref "/shells.md" >}})
+
+[BASH Shortcuts]({{< ref "/BASHShortcuts.md" >}})
+
+[Shell History]({{< ref "/shellHistory.md" >}})
+
+## Manipulating Files
+In Linux, everything is a file.  Being able to effectively view and manipulate files is a crucial skill that unlocks all the other goodness that Linux has to offer.
+
+[Command Line Text Editors]({{< ref "/textEditors.md" >}})
+
+[File Pagers]({{< ref "/pagers.md" >}})

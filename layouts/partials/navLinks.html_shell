@@ -1,0 +1,14 @@
+<!-- Print the "Home" link and text for link to previous directory(assumed to be given by "navbar.html") 
+-->
+
+<span>
+    <a href="/">Home</a>
+    <span>&#8192;|&#8192;</span>
+    <a href="/basictoolset/">/basicToolset</a>
+    <span>&#8192;|&#8192;</span>
+
+    <!--<a href="./..">{{ . }}</a>
+    <span>&#8192;|&#8192;</span>
+    <a href="/first-page/">First Page</a>-->
+</span>
+
