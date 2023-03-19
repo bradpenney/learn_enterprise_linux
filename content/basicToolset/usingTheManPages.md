@@ -16,7 +16,7 @@ man lvcreate
 ```
 
 Results in:
-![man lvcreate](/images/manLVCreate.png)
+![man lvcreate](https://brad_penney.gitlab.io/learn_enterprise_linux/images/manLVCreate.png)
 
 The resulting page is searchable using forward slash `/` - similar to `vim`.  To exit a `man` page, simply press `q`.
 
