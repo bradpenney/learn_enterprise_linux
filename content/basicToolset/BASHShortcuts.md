@@ -1,7 +1,7 @@
 ---
 title: "Essential BASH Keyboard Shortcuts"
 date: 2023-03-11T07:29:52-04:00
-draft: true
+draft: false
 ---
 
 There are many keyboard shortcuts to learn in BASH (and Enterprise computing in general!).  These are the essentials:

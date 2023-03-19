@@ -1,7 +1,7 @@
 ---
 title: "Enterprise Command Line Shells"
 date: 2023-03-11T07:11:36-04:00
-draft: true
+draft: false 
 ---
 
 In UNIX and Linux, a shell is the basic program that is used in the command line.  Some believe the name is a metaphor for a snail - the shell wraps around the kernel.  Like most things in the Linux world, there are many different variations and versions, often building off each other and fixing some weakness of a previous shell.  Examples include [ZSH](https://ohmyz.sh/), [FISH](https://fishshell.com/), and many others.  

@@ -1,7 +1,7 @@
 ---
 title: "File Pagers"
 date: 2023-03-09T09:38:29-04:00
-draft: true
+draft: false 
 ---
 
 There are several command-line utilities to review the contents of a file in Enterprise Linux.  These include:

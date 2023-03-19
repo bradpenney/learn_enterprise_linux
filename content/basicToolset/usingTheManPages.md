@@ -1,7 +1,7 @@
 ---
 title: "Finding Help In Linux"
 date: 2023-03-15T09:50:48-03:00
-draft: true
+draft: false
 ---
 
 One of the nicest things about Linux is that it is largely self-documented.  If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), its very likely that the operating system itself will provide the answers.

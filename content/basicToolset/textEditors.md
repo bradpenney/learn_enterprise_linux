@@ -1,7 +1,7 @@
 ---
 title: "Command Line Text Editors"
 date: 2023-03-09T10:02:36-04:00
-draft: true
+draft: false
 ---
 
 In Enterprise Linux, editing text files is a critical skill for developers, system administrators, basically anyone who is using the command line.  There are a few options available:
