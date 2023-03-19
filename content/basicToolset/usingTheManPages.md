@@ -16,7 +16,7 @@ man lvcreate
 ```
 
 Results in:
-{{< figure src="/images/manLVCreate.png" caption="Results of `man lvcreate`">}}
+![Results of `man lcvcreate`](images/manLVCreate.png)
 
 The resulting page is searchable using forward slash `/` - similar to `vim`.  To exit a `man` page, simply press `q`.
 
