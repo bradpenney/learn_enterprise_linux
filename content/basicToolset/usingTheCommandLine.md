@@ -1,7 +1,7 @@
 ---
 title: "Using The Command Line"
 date: 2023-03-19T20:16:18-03:00
-draft: true
+draft: false 
 ---
 
 In Enterprise Linux, the command line is the most common tool-of-choice.  Being comfortable with its use is paramount; most developers and administrators will SSH into a server and use the command line for their day to day activities.
