@@ -7,7 +7,6 @@ draft: false
 One of the nicest things about Linux is that it is largely self-documented.  If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), its very likely that the operating system itself will provide the answers.
 
 ## The Manual Pages
-
 The first and best place to begin looking for help within Linux is the `man` pages (short for manual).  For any command, simply type `man <command>` and a a manual page containing lots of useful information will appear!
 
 Running this command:
@@ -19,6 +18,27 @@ Results in:
 ![man lvcreate](https://brad_penney.gitlab.io/learn_enterprise_linux/images/manLVCreate.png)
 
 The resulting page is searchable using forward slash `/` - similar to `vim`.  To exit a `man` page, simply press `q`.
+
+## Rebuilding the Manual Pages
+Sometimes on very newly built systems, the database that holds the entries of the Manual hasn't yet been set up (it is controlled by a scheduled job which may not have run yet!).  In order to generate the Manual database listing, run `mandb` which will manually trigger a build.
+
+## Fuzzy Searching
+It is a common occurrence that the user might not know the exact command they're searching for.  The manual has a couple of different ways to perform fuzzy searches - but beware the number of results may be large.
+
+``` bash
+#Syntax: 
+    man -k <command> 
+    # or
+    apropos <command>
+
+#Example:
+    man -k network
+    apropos network
+
+# Narrow the results with grep
+    man -k network | grep device
+```
+
 
 ## The Common Syntax of Man Pages
 

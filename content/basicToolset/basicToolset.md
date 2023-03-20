@@ -15,6 +15,8 @@ The Command Line (CLI) may be a bit intimidating for those coming from a more Gr
 
 [Enterprise Command Line Shells]({{< ref "/shells.md" >}})
 
+[Using the Command Line]({{< ref "/usingTheCommandLine.md" >}})
+
 [BASH Shortcuts]({{< ref "/BASHShortcuts.md" >}})
 
 [Shell History]({{< ref "/shellHistory.md" >}})
