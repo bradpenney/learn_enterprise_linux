@@ -53,10 +53,10 @@ disableKinds = ["section"]
     identifier = "/basicToolset"
     name       = "/basicToolset"
     url        = "/basicToolset/basicToolset"
- # [[menu.main]]
- #   identifier = "/everydayAdmin"
- #   name       = "/everydayAdmin"
- #   url        = "/everydayAdmin/everydayAdmin"
+  [[menu.main]]
+    identifier = "/everydayAdmin"
+    name       = "/everydayAdmin"
+    url        = "/everydayAdmin/everydayAdmin"
  # [[menu.main]]
  #   identifier = "/tuning"
  #   name       = "/tuning"
