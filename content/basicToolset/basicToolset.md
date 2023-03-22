@@ -9,6 +9,7 @@ One of the nicest things about Linux is that it is largely self-documented.  If 
 
 [Finding Help in Linux]({{< ref "/findingHelpInLinux.md" >}})
 
+[Generating the Manual]({{< ref "/generatingManPages.md" >}})
 
 ## Command Line Basics
 The Command Line (CLI) may be a bit intimidating for those coming from a more Graphical User Interface (GUI) background.  In time, many users find the the CLI is actually a very comfortable and powerful way to get difficult things done!
