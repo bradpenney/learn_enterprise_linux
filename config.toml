@@ -1,4 +1,4 @@
-baseurl      = "https://Brad_Penney.gitlab.io/learn_enterprise_linux/"
+baseurl      = "https://learn_enterprise_linux.com"
 title        = "Learn Enterprise Linux"
 languageCode = "en-us"
 theme        = "hello-4s3ti"
