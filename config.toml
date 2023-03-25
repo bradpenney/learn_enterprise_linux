@@ -40,7 +40,7 @@ disableKinds = ["section"]
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "learn_enterprise_linux"
+      logoText = "learn-enterprise-linux"
       logoHomeLink = "https://Brad_Penney.gitlab.io/learn_enterprise_linux/"
     # or
     #
