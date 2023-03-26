@@ -65,7 +65,7 @@ disableKinds = ["section"]
  #   identifier = "/security"
  #   name       = "/security"
  #   url        = "/security/security"
- # [[menu.main]]
- #   identifier = "/scripting"
- #   name       = "/scripting"
- #   url        = "/scripting/scripting"
+  [[menu.main]]
+    identifier = "/scripting"
+    name       = "/scripting"
+    url        = "/scripting/scripting"
