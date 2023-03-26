@@ -41,7 +41,7 @@ disableKinds = ["section"]
 
     [languages.en.params.logo]
       logoText = "learn-enterprise-linux"
-      logoHomeLink = "https://learn-enterprise-linux/"
+      logoHomeLink = "https://learn-enterprise-linux.com"
     # or
     #
     # path = "/img/your-example-logo.svg"
