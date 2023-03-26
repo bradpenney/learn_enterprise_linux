@@ -11,6 +11,6 @@ On freshly created Linux system, it is common that the Manual Pages have not yet
 
 Most distributions of Linux use a scheduled job to generate the Manual - usually daily.  Predictably, there is also a manual way to generate the Manual quickly and easily.  Run the `mandb` command to update the Manual to the latest and greatest version:
 
-![Generate the Manual](https://learn-enterprise-linux/images/endOfManDBCommand.png)
+![Generate the Manual](https://learn-enterprise-linux.com/images/endOfManDBCommand.png)
 
 Once this has successfully completed, a fully populated Manual awaits the curious user.  Let the learning commence!

@@ -24,7 +24,7 @@ vim HelloWorld.sh
 echo "Hello World!"
 ```
 
-![Write `HelloWorld.sh` in `vim`"](https://learn-enterprise-linux/images/vimHellWorld.png) 
+![Write `HelloWorld.sh` in `vim`"](https://learn-enterprise-linux.com/images/vimHellWorld.png) 
 
 3. Save the file and exit using `:wq`
 
@@ -32,4 +32,4 @@ echo "Hello World!"
 
 5. Run your file with `./HelloWorld.sh`:
 
-![Run `HelloWorld.sh`](https://learn-enterprise-linux/images/HelloWorld.png)
+![Run `HelloWorld.sh`](https://learn-enterprise-linux.com/images/HelloWorld.png)
