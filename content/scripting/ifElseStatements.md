@@ -45,7 +45,7 @@ This tells the kernel that the contents of the file should be interpreted using 
 ## Step 3: Write the If/Else Statement
 Now on to the fun part - writing the `if/else` statement.  The finished product looks like this:
 
-![BASH If/Else Demo](https://learn-enterprise-linux/images/ifElseFileExists.png)
+![BASH If/Else Demo](https://learn-enterprise-linux.com/images/ifElseFileExists.png)
 
 Before just copy/pasting this, lets break it down and explain it a little.
 
