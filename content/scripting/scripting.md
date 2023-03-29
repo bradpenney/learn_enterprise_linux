@@ -11,7 +11,10 @@ The concepts and skills used in shell scripting are similar to many other langua
 
 [Scripting "Hello World"]({{< ref "/scriptingHelloWorld.md" >}})
 
+[Decision Making - `if/else` Statements]({{< ref "/ifElseStatements.md" >}})
+
 
 ## Increasing Robustness 
 Once you have mastered the basics, its time to kick it up a notch and make your scripts a bit more robust.
+
 [Testing the Number of Parameters Passed to a Shell Script]({{< ref "/testingNumberOfParameters.md" >}})
