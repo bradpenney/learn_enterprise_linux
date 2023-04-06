@@ -10,7 +10,7 @@ disableKinds = ["section"]
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-  hometitle = "Teach Enterprise Linux"
+  hometitle = "Learn Enterprise Linux"
 
   # Subtitle for home
   homeSubtitle = "Exploring Critical Linux Skills"
