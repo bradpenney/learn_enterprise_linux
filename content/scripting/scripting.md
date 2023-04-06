@@ -11,8 +11,9 @@ The concepts and skills used in shell scripting are similar to many other langua
 
 [Scripting "Hello World"]({{< ref "/scriptingHelloWorld.md" >}})
 
-[Decision Making - `if/else` Statements]({{< ref "/ifElseStatements.md" >}})
+[Make Decisions with `if/else` Statements]({{< ref "/ifElseStatements.md" >}})
 
+[Make Decisions with `case` Statements]({{< ref "/caseStatements.md" >}})
 
 ## Increasing Robustness 
 Once you have mastered the basics, its time to kick it up a notch and make your scripts a bit more robust.
