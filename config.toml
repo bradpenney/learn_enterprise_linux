@@ -1,5 +1,5 @@
 baseurl      = "https://learn-enterprise-linux.com"
-title        = "Learn Enterprise Linux"
+title        = "Teach Enterprise Linux"
 languageCode = "en-us"
 theme        = "hello-4s3ti"
 paginate     = 10
