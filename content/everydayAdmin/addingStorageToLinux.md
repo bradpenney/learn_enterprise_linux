@@ -24,7 +24,7 @@ Once added, the disks will show up as hardware for the VM:
 
 ![Disks Successfully Added]({{< siteurl >}}/images/disksAdded.png)
 
-## Find the Added Disks with `lsblk`
+## Find the Added Disks with *lsblk*
 
 Boot the system, login, become `root`, then use the `lsblk` command to find the device name of the disk(s).  Depending on the hypervisor being used, this could show up a variety of different ways such as `sdb` or `vdb`:
 
@@ -36,7 +36,7 @@ The new disks added are labelled `vdb` and `vdc`.  Within the file system, they 
 
 > Note that this entire demo will be performed as `root` - it rarely makes sense for a normal user to manipulate storage.
 
-## Use `fdisk` to Create a Partition Table
+## Use *fdisk* to Create a Partition Table
 
 New disks usually don't have a partition table - meaning they are not useable yet.  There are two different kinds of partition tables - MBR and GPT (also known as GUID).  GPT is newer (and better!) and we'll use it for this demo.  
 
@@ -46,7 +46,7 @@ New disks usually don't have a partition table - meaning they are not useable ye
 
 > Help inside `fdisk` can be found with `m` (some think of it as `m` for Menu)
 
-## Use `fdisk` to Create Partitions
+## Use *fdisk* to Create Partitions
 
 Reopen `fdisk` for the `vdb` disk, and start creating partitions as needed.  For this demo, we'll create a 1GiB partition (but this is totally arbitrary!).  Use the `n` command to create a new partition on the disk, specifying the partition number, the starting sector, and the ending sector (or the requested size of partition):
 
@@ -86,7 +86,7 @@ As below (using `root`, therefore no `sudo`):
 
 ![Make Mount Points]({{< siteurl >}}/images/makeMountPoints.png)
 
-## Make a Backup of `/etc/fstab`
+## Make a Backup of */etc/fstab*
 
 In order for mounts to persist through reboots, it is necessary to add them to `/etc/fstab/` - a critical file - that if incorrectly formatted can cause booting problems for a Linux system.  To safeguard against this and create a rollback plan, make a backup of the existing `/etc/fstab` configuration to ensure system recoverability.  Issue the command `cp /etc/fstab /etc/fstab_bkup` (with `sudo` if needed):
 
