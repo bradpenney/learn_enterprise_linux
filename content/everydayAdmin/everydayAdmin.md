@@ -8,3 +8,7 @@ draft: false
 A critical skill for every administrator to master, managing users and file permissions are an everyday task on many Linux servers.
 
 [Basic Linux Permissions]({{< ref "/basicPermissions.md"  >}})
+
+## Managing Hardware
+
+[Adding Storage to Linux]({{< ref "/addingStorageToLinux.md" >}})

@@ -8,7 +8,7 @@ Shell scripting comes fully equipped with `if/else` statement capabilities.  Thi
 
 In this demo, we'll write a simple script to check if a file exists on the system.  The finished product will work like this:
 
-![Testing If `myFile.txt` Exists](https://learn-enterprise-linux.com/images/testMyFileDemo.png)
+![Testing If `myFile.txt` Exists]({{< siteurl >}}/images/testMyFileDemo.png)
 
 ## Step 1: Determine the Condition 
 One of the really fantastic things about shell scripting is that it will run most anything that will run in the standard CLI.  This can make testing conditionals very simple - check the output of any command with the server is running in the desired state, then use that same command in a script.  For example, if checking to see if the SSH service is running, issue this command:
@@ -20,7 +20,7 @@ ps aux | grep ssh | grep -v grep | wc -l
 
 Which results in:
 
-![Checking SSH is Running](https://learn-enterprise-linux.com/images/grepSSHwc.png)
+![Checking SSH is Running]({{< siteurl >}}/images/grepSSHwc.png)
 
 So, as there is one line returned, there is one SSH process running.  This command could be embedded in any shell script as `echo $(ps aux | grep ssh | grep -v grep | wc -l)`.  Or, as we'll see below, it could be used as a conditional in an `if/else` statement.
 
@@ -45,7 +45,7 @@ This tells the kernel that the contents of the file should be interpreted using 
 ## Step 3: Write the If/Else Statement
 Now on to the fun part - writing the `if/else` statement.  The finished product looks like this:
 
-![BASH If/Else Demo](https://learn-enterprise-linux.com/images/ifElseFileExists.png)
+![BASH If/Else Demo]({{< siteurl >}}/images/ifElseFileExists.png)
 
 Before just copy/pasting this, lets break it down and explain it a little.
 

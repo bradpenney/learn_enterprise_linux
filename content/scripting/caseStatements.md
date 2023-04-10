@@ -10,7 +10,7 @@ One of the very nice options available in shell scripting is the `case` statemen
 
 Interestingly, I recently installed a fresh version of Manjaro running i3wm and the `.bashrc` file contains a very nice `case` statement which decides how to correctly handle compressed files:
 
-![.bashrc Case Statement](https://learn-enterprise-linux.com/images/caseStatement.png)
+![.bashrc Case Statement]({{< siteurl >}}/images/caseStatement.png)
 
 ## Case Statement Syntax and Basic Usage
 
