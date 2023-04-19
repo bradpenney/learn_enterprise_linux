@@ -12,3 +12,5 @@ A critical skill for every administrator to master, managing users and file perm
 ## Managing Hardware
 
 [Adding Storage to Linux]({{< ref "/addingStorageToLinux.md" >}})
+
+[Logical Volume Management Basics]({{< ref "/lvmBasics.md" >}})
