@@ -14,3 +14,7 @@ A critical skill for every administrator to master, managing users and file perm
 [Adding Storage to Linux]({{< ref "/addingStorageToLinux.md" >}})
 
 [Logical Volume Management Basics]({{< ref "/lvmBasics.md" >}})
+
+[Serving Up Network Storage]({{< ref "/networkFileShareServer.md" >}})
+
+[Accessing Network Storage]({{< ref "/accessingNetworkStorage.md" >}})
