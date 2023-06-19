@@ -8,10 +8,10 @@ In Enterprise Linux, the command line is the most common tool-of-choice.  Being 
 
 ## CLI Command Syntax
 
-Most standard commands are made up of 3 compoenents - the second and third are sometimes optional, depending on the context:
+Most standard commands are made up of 3 components - the second and third are sometimes optional, depending on the context:
 
 1) Command
-2) Option (optional, depdending on context)
+2) Option (optional, depending on context)
 3) Argument (optional, depending on context)
 
 For example, a standard command could be:

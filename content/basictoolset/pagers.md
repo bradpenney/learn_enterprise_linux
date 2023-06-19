@@ -20,7 +20,7 @@ There are several command-line utilities to review the contents of a file in Ent
 
 3. `view`
    - A "read-only" mode for the `vim` editor.
-   - Has all the same functionality as `vi` or `vim` - users can search the doucment, move the cursor to the beginning/end of lines or the document itself.
+   - Has all the same functionality as `vi` or `vim` - users can search the document, move the cursor to the beginning/end of lines or the document itself.
    - User can even modify the document, but cannot save it without the `!` flag (and appropriate file permissions of course)
    - Typical Usage:
      - `view myFile.txt`

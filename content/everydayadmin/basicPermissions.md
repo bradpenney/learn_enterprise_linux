@@ -13,7 +13,6 @@ Permissions can be seen using the `ls -ltr` command.  For example:
 
 ```
 
-
 ## Files Ownership
 Looking at the listing above, the first thing to understand is that each file has an owner and a group.  This is clearly shown (in expanded form) below:
 
@@ -29,7 +28,6 @@ Looking at the listing above, the first thing to understand is that each file ha
 The permissions are on the left side (`-rw-r--r--`) and come in three sets. These can be interpreted (in expanded form) as:
 
 ``` bash
-
    -        rwx    r--    r--
    ^         ^      ^      ^
 file type  owner  group  other

@@ -20,6 +20,6 @@ In Enterprise Linux, editing text files is a critical skill for developers, syst
    
 3. Emacs
    - Another useful tool, but much less commonly used in Enterprise Linux.
-   - More useful for developers than system adminstrators.
+   - More useful for developers than system administrators.
    - Learning curve is steep for Emacs, but it does have excellent documentation.
    - Emacs is usually not installed by default on Enterprise-grade Linux systems.

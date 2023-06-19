@@ -4,7 +4,7 @@ date: 2023-04-13T18:51:11-03:00
 draft: false 
 ---
 
-While [adding storage (directly) to Linux]({{< ref "/addingStorageToLinux.md" >}}) is an important concept for all Linux administrators to understand, directly adding and using individual disks is rarely used in an enterprise-grade Linux system.  Enterprise computing needs a much more flexible solution - enter **Logical Volume Management (LVM)**.  This article will explore the three basic components of LVM - phyiscal volumes, volume groups, and logical volumes.
+While [adding storage (directly) to Linux]({{< ref "/addingStorageToLinux.md" >}}) is an important concept for all Linux administrators to understand, directly adding and using individual disks is rarely used in an enterprise-grade Linux system.  Enterprise computing needs a much more flexible solution - enter **Logical Volume Management (LVM)**.  This article will explore the three basic components of LVM - physical volumes, volume groups, and logical volumes.
 
 > Note: This demo is performed on a Rocky Linux installation.  This is downstream of RHEL9 - there is no customer support available from Red Hat.  Further, this demo is performed by `root` - most (all?) storage manipulation jobs should be performed by `root` in enterprise-grade computing.
 
@@ -16,7 +16,7 @@ The procedure to add a new physical disk is outlined in [Adding Storage to Linux
 
 ## Create a New Physical Volume
 
-These newly created disks - `vdb`, `vdc`, `vdd`, and `vde` - will be visible in `lsblk`.  Each of these needs to be added as a **physical volume**, the underlying storage unit of LVM.  Physical volumes can be added and removed from a system as needed (physical volumes are often removed when the malfunction or are decommissioned due to obsolesence).  This means that all that is needed to increase the storage on a system is to add a new physical (or virtual) disk and make it a the physical volume.  The enterprise can continue to add disks until the budget runs out - hundreds of petabytes are certainly possible.
+These newly created disks - `vdb`, `vdc`, `vdd`, and `vde` - will be visible in `lsblk`.  Each of these needs to be added as a **physical volume**, the underlying storage unit of LVM.  Physical volumes can be added and removed from a system as needed (physical volumes are often removed when the malfunction or are decommissioned due to obsolescence).  This means that all that is needed to increase the storage on a system is to add a new physical (or virtual) disk and make it a physical volume.  The enterprise can continue to add disks until the budget runs out - hundreds of petabytes are certainly possible.
 
 The command to create physical volumes is:
 ``` shell
@@ -49,7 +49,7 @@ vgcreate vg_demo /dev/vdb /dev/vdc /dev/vdd /dev/vde
 
 ![Create Volume Group vg_demo]({{< siteurl >}}/images/vgcreate.png)
 
-**The volume group is the central unit of organization for Logical Volume Managment** - phyiscal volumes can be added and removed, and logical volumes can be added and removed.  The volume group itself is constant. A few commands for managing volume groups include `vgsscan` (volume group scan):
+**The volume group is the central unit of organization for Logical Volume Management** - physical volumes can be added and removed, and logical volumes can be added and removed.  The volume group itself is constant. A few commands for managing volume groups include `vgsscan` (volume group scan):
 
 ![Scan for Volume Groups]({{< siteurl >}}/images/vgscan.png)
 
@@ -63,7 +63,7 @@ List information about a specific volume group with `vgdisplay <volumeGroup>`:
 
 ## Create a Logical Volume
 
-After establishing a volume group, it is time to create a Logical Volume from it.  Note that it is possible to create more than one logical volume from a volume group - each will have its own filesystem and mount point (as per below).  As mentioned above, it is possible to have software-based disk redundancy built in as well.  Even more impressive, volume groups can be exported (and the logical volumes they contain) and imported into another system; the flexibility of volume groups is incredible.  For this demo, we'll create a basic logical volume that takes up 50% of the volume group's free capacity and uses RAID5 disk redundancy:
+After establishing a volume group, it is time to create a Logical Volume from it.  Note that it is possible to create more than one logical volume from a volume group - each will have its own file system and mount point (as per below).  As mentioned above, it is possible to have software-based disk redundancy built in as well.  Even more impressive, volume groups can be exported (and the logical volumes they contain) and imported into another system; the flexibility of volume groups is incredible.  For this demo, we'll create a basic logical volume that takes up 50% of the volume group's free capacity and uses RAID5 disk redundancy:
 
 ``` shell
 #lvcreate --type <asRequired> -l <size> -n <lvName> <vgName>
@@ -83,7 +83,7 @@ Once the logical volume is created, its ready to be mounted to the system.
 
 ### Make a File System on the Logical Volume
 
-Similar to creating partitions from separate disks and mounting them to the [Linux Filesystem Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}}), the Logical Volume will need a filesystem.  The location, by default, will be `/dev/<volumeGroupName>/<logicalVolumeName>`, and the standard `mkfs.<type>` will work here:
+Similar to creating partitions from separate disks and mounting them to the [Linux File System Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}}), the Logical Volume will need a file system.  The location, by default, will be `/dev/<volumeGroupName>/<logicalVolumeName>`, and the standard `mkfs.<type>` will work here:
 
 ``` shell
 #mkfs.<fstype> <location>
@@ -127,7 +127,7 @@ findmnt --verify
 
 ![Verify Mounted LVM Doesn't Create Mount Errors]({{< siteurl >}}/images/verifyLVM.png)
 
-Ensure that the mount point is acessible for creating files:
+Ensure that the mount point is accessible for creating files:
 
 ![Create a File on /lvmDemo]({{< siteurl >}}/images/touchLVMDemo.png)
 
