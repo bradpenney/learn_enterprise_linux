@@ -14,7 +14,7 @@ In this example, Virtual Machine Manager will be used - this is a wrapper around
 
 Adding a disk in Virtual Machine Manager is simple.  Navigate to the Virtual Machine information panel, and click "Add Hardware":
 
-![Add Hard Disk to VM in VMM]({{< siteurl >}}/images/addHardDisk.png)
+![Add Hard Disk to VM in Virtual Machine Manager]({{< siteurl >}}/images/addHardDisk.png)
 
 The size of the disk to add is entirely dependent on the space available - for this demo, we'll add a couple of 10GiB virtual disks:
 
@@ -32,7 +32,7 @@ Boot the system, login, become `root`, then use the `lsblk` command to find the 
 
 The new disks added are labelled `vdb` and `vdc`.  Within the file system, they can be found at `/dev/vdb` and `/dev/vdc` respectively:
 
-![New Disks in the Filesystem]({{< siteurl >}}/images/disksInFileSystem.png)
+![New Disks in the File System]({{< siteurl >}}/images/disksInFileSystem.png)
 
 > Note that this entire demo will be performed as `root` - it rarely makes sense for a normal user to manipulate storage.
 
@@ -40,9 +40,9 @@ The new disks added are labelled `vdb` and `vdc`.  Within the file system, they 
 
 New disks usually don't have a partition table - meaning they are not useable yet.  There are two different kinds of partition tables - MBR and GPT (also known as GUID).  GPT is newer (and better!) and we'll use it for this demo.  
 
-`fdisk` is the utility most Linux administrators use to manipulate disks, although there are other options such as `gdisk` and `parted`.  We'll use `fdisk` - issue `fdisk /dev/<diskName>` to open the new disk with the utility, then create a parition table with `g`, and write the changes with `w`:
+`fdisk` is the utility most Linux administrators use to manipulate disks, although there are other options such as `gdisk` and `parted`.  We'll use `fdisk` - issue `fdisk /dev/<diskName>` to open the new disk with the utility, then create a partition table with `g`, and write the changes with `w`:
 
-![Create a Parition Table]({{< siteurl >}}/images/createPartitionTable.png)
+![Create a Partition Table]({{< siteurl >}}/images/createPartitionTable.png)
 
 > Help inside `fdisk` can be found with `m` (some think of it as `m` for Menu)
 
@@ -50,7 +50,7 @@ New disks usually don't have a partition table - meaning they are not useable ye
 
 Reopen `fdisk` for the `vdb` disk, and start creating partitions as needed.  For this demo, we'll create a 1GiB partition (but this is totally arbitrary!).  Use the `n` command to create a new partition on the disk, specifying the partition number, the starting sector, and the ending sector (or the requested size of partition):
 
-![Create a GPT Parition]({{< siteurl >}}/images/createGPTPartition.png)
+![Create a GPT Partition]({{< siteurl >}}/images/createGPTPartition.png)
 
 > Note that in "Step 4" above, pressing "Enter" will accept the default proposed by `fdisk` 
 
@@ -72,11 +72,11 @@ Partitions are containers to hold file systems, which is the useable storage spa
 
 ![Make File Systems on the New Partitions]({{< siteurl >}}/images/mkfs_disks.png)
 
-> Just for fun, we created two different types of filesystems, one `xfs` and the other `ext4`.  Filesystem types are a big topic, but these are two very important types.
+> Just for fun, we created two different types of file systems, one `xfs` and the other `ext4`.  File system types are a big topic, but these are two very important types.
 
 ## Create a Directory for the File Systems
 
-Unlike in some other operating systems, newly available storage doesn't show up as a new drive letter.  Rather, the new space will need to have a place assigned within the [Linux FileSystem Hierarchy]({{< ref "linuxFilesystemHierarchy.md" >}}).   Of course, these can be named virtually anything, in this case, we'll choose `/app` for the `xfs` storage, and `/db` for the `ext4` storage.  Simply create directories with the standard `mkdir` command:
+Unlike in some other operating systems, newly available storage doesn't show up as a new drive letter.  Rather, the new space will need to have a place assigned within the [Linux File System Hierarchy]({{< ref "linuxFilesystemHierarchy.md" >}}).   Of course, these can be named virtually anything, in this case, we'll choose `/app` for the `xfs` storage, and `/db` for the `ext4` storage.  Simply create directories with the standard `mkdir` command:
 
 ```shell
 sudo mkdir /app /db
@@ -106,7 +106,7 @@ blkid | grep vdb1 | awk ' { print $2 } ' >> /etc/fstab
 
 ![Add UUID to `/etc/fstab` Without Copy/Paste]({{< siteurl >}}/images/addVdb1ToFstab.png)
 
-> As above, it is ***highly recommended** to confirm the output of the command is as expected BEFORE appending it to `/etc/fstab`.  This kind of "trust but verify" mentality will save many blunders in the command-line.
+> As above, it is **highly recommended** to confirm the output of the command is as expected BEFORE appending it to `/etc/fstab`.  This kind of "trust but verify" mentality will save many blunders in the command-line.
 
 Once the UUID is added, edit `/etc/fstab` and make sure the line is as follows:
 

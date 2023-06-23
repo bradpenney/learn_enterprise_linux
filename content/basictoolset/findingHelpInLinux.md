@@ -7,7 +7,7 @@ draft: false
 One of the nicest things about Linux is that it is largely self-documented.  If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), its very likely that the operating system itself will provide the answers.
 
 ## The Manual Pages
-The first and best place to begin looking for help within Linux is the `man` pages (short for manual).  For any command, simply type `man <command>` and a a manual page containing lots of useful information will appear!
+The first and best place to begin looking for help within Linux is the `man` pages (short for manual).  For any command, simply type `man <command>` and a manual page containing lots of useful information will appear!
 
 Running this command:
 ``` bash
@@ -45,7 +45,7 @@ It is a common occurrence that the user might not know the exact command they're
 Manual pages are laid out in a specific and common format.  Here are a few highlights:
 - A common convention in Linux, optional items are surrounded by square brackets - `[option]`
 - Items that are mutually exclusive (users must choose one or the other) are surrounded by curly braces and separated by "or" pipes - {h|H}
-- If multiple options are possible, an elipsis is used - `. . .`
+- If multiple options are possible, an ellipsis is used - `. . .`
 - Some commands will have examples close to the end of their manual page, especially more complex commands
 
 ## Manual Page Sections

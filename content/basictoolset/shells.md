@@ -10,13 +10,13 @@ In UNIX and Linux, a shell is the basic program that is used in the command line
 
 In Enterprise Linux, only a few command-line shells are in widespread use:
 
-1. **BASH (Bourne-Again Shell)**
+1. **BASH (Borne-Again Shell)**
    - This is far-and-away the most commonly used shell in Enterprise Linux.  All Linux distributions have BASH available, even if it is not the default.  Not all UNIX distributions include BASH.
    - Standard file location: `/bin/bash` or (`/usr/bin/bash`)
    - `#!/bin/bash` is usually included at the beginning of each shell script so the kernel knows which interpreter to use
 
 2. **KSH (Korn Shell)**
-   - Popular amongst the remaining UNIX distributions such as AIX. 
+   - Popular among the remaining UNIX distributions such as AIX. 
    - Lacks many features that are standard in BASH, most notably tab-completion and "up-arrow" history
    
 3. **SH (Shell)**

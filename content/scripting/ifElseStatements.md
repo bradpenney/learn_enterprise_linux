@@ -4,7 +4,7 @@ date: 2023-03-28T08:37:52-03:00
 draft: false
 ---
 
-Shell scripting comes fully equipped with `if/else` statement capabilities.  This is commonly used to evaluate conditions such as input from parameters, ensure files exist, ensure that processes are running, and there are several other use cases.  The syntax is a little different than some other languages, but for the most part BASH `if/else` statements are easy, even for those who haven't used other programming langauges.  
+Shell scripting comes fully equipped with `if/else` statement capabilities.  This is commonly used to evaluate conditions such as input from parameters, ensure files exist, ensure that processes are running, and there are several other use cases.  The syntax is a little different than some other languages, but for the most part BASH `if/else` statements are easy, even for those who haven't used other programming languages.  
 
 In this demo, we'll write a simple script to check if a file exists on the system.  The finished product will work like this:
 
@@ -51,7 +51,7 @@ Before just copy/pasting this, lets break it down and explain it a little.
 
 ### The "If" Statement
 
-Any `if/else` statement starts with `if [ <condition> ]; then`.  In psuedo-code, this translates to "if this condition is met, do the following":
+Any `if/else` statement starts with `if [ <condition> ]; then`.  In pseudo-code, this translates to "if this condition is met, do the following":
 
 ``` shell
 # If myFile.txt exists, do the following:

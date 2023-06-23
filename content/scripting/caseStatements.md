@@ -8,7 +8,7 @@ One of the very nice options available in shell scripting is the `case` statemen
 
 > Shell's `case` statement is similar to the `switch` statement found in other programming languages (both of which are missing entirely from Python!)
 
-Interestingly, I recently installed a fresh version of Manjaro running i3wm and the `.bashrc` file contains a very nice `case` statement which decides how to correctly handle compressed files:
+As an example, a recent version of Manjaro running i3wm includes the following case statement in its `.bashrc` file; it decides how to correctly handle compressed files:
 
 ![.bashrc Case Statement]({{< siteurl >}}/images/caseStatement.png)
 

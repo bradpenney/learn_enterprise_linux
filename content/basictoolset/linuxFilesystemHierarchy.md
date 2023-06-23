@@ -37,9 +37,9 @@ drwxrwxrwt.  18 root root  420 Mar 23 09:35 tmp
 
 ```
 
-As Linux is a self-documenting operating system (see [Finding Help in Linux]({{< ref "/findingHelpInLinux.md" >}})), predictably there is a lovely Manual page that explains the filesystem hierarchy - issue `man hier` on any distribution, read, learn and enjoy!
+As Linux is a self-documenting operating system (see [Finding Help in Linux]({{< ref "/findingHelpInLinux.md" >}})), predictably there is a lovely Manual page that explains the file system hierarchy - issue `man hier` on any distribution, read, learn and enjoy!
 
-## Ephemeral vs Persistent Filesystems and Directories
+## Ephemeral vs Persistent File Systems and Directories
 
 It is worth noting that not everything seen in the above listing represents a file or directory stored on a hard drive.  In particular, `/proc` and `/run` (and sometimes `/tmp`) are "ephemeral" directories mounted on RAM-based file systems.  This means they are generated during the boot process and only exist during this session.  If you were able to access this hard drive without booting the operating system (common if there are multiple hard-disks), `/proc` and `/run` would not be present on this disk.
 

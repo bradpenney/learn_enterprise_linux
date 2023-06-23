@@ -36,7 +36,7 @@ systemctl enable --now nfs-server # RHEL Family
 systemctl enable --now nfs-kernel-server # Debian Family
 ```
 
-### FirewallD Specific Configuration
+### Firewalld Specific Configuration
 
 If you're running the  `firewalld.service`, you'll also need to adjust the firewall using these commands:
 ``` bash

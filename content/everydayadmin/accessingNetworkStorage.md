@@ -26,7 +26,7 @@ Export list for homeServer:
 Once located, the next step is to determine the appropriate way to set up access - permanent or automount?
 
 ## Option 1: Permanently Mounted
-Permanently mounted means the client system will always show the NFS system in its  [Filesystem Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}}).  This approach makes a lot of sense in many enterprise systems - it is desireable to always be able to see a target directory as if it were part of the client system.  There is one major drawback however - if the NFS server is unavailable, it may cause instabilty in the client.  Specifically, the client may boot very slowly (due to timeouts) or may not boot at all.  However, if the NFS server is meant to have 99.999% availability (the gold standard in enterprise computing), this shouldn't be an issue.
+Permanently mounted means the client system will always show the NFS system in its  [File System Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}}).  This approach makes a lot of sense in many enterprise systems - it is desirable to always be able to see a target directory as if it were part of the client system.  There is one major drawback however - if the NFS server is unavailable, it may cause instability in the client.  Specifically, the client may boot very slowly (due to timeouts) or may not boot at all.  However, if the NFS server is meant to have 99.999% availability (the gold standard in enterprise computing), this shouldn't be an issue.
 
 The software needed to access a permanently mounted NFS share depends on the Linux family:
 
@@ -53,7 +53,7 @@ If these validations succeed, a final reboot should confirm the NFS is now worki
 
 ## Option 2: Automount
  
-Automount is an interesting option that also makes sense in the right scenario.  For instance, if user home directories are actually located on an NFS and not on the client computer, then having them permanently mounted isn't desireable from either a privacy or security standpoint. It would make more sense for a logged in user should see their particular home directory (on-demand as needed) and nothing else.  Another example scenario would be logging - if a server only writes to a log once per day and that log is stored in an NFS, there is no reason for the OS to maintain connectivity to the NFS for the other 23 hours per day.  The beauty is that the file system is available *seamlessly on-demand* whenever called upon by a user or program, but disconnects  when not in use (default timeout is configurable).  
+Automount is an interesting option that also makes sense in the right scenario.  For instance, if user home directories are actually located on an NFS and not on the client computer, then having them permanently mounted isn't desirable from either a privacy or security standpoint. It would make more sense for a logged in user should see their particular home directory (on-demand as needed) and nothing else.  Another example scenario would be logging - if a server only writes to a log once per day and that log is stored in an NFS, there is no reason for the OS to maintain connectivity to the NFS for the other 23 hours per day.  The beauty is that the file system is available *seamlessly on-demand* whenever called upon by a user or program, but disconnects  when not in use (default timeout is configurable).  
 
 > Note that automounting usually makes sense when directory access is programmatically defined (via script or program).  For instance, as soon as a user logs in via SSH, `/etc/profile` defines their home directory.  The end-user doesn't need to know whether it is an NFS or not (and almost certainly doesn't care).
 
@@ -95,10 +95,10 @@ The corresponding `/etc/auto.share` configuration file would contain:
 ```
 
 #### Explanation
-In the above example, `homeServer` is serving up `/sharedSpace`, meaning all the subdirectories within it can be accessed.  When using automount, an end-user navigating through the CLI won't see any subdirectories there, but could access them if the filepaths were known (i.e. `/share/backups`).  This is why, as noted above, automount is usually used in conjunction with scripting/programming.  The lack of visibility via CLI provides privacy and security, but the resources are still available as needed (and usually accessed via scripts/programs).
+In the above example, `homeServer` is serving up `/sharedSpace`, meaning all the subdirectories within it can be accessed.  When using automount, an end-user navigating through the CLI won't see any subdirectories there, but could access them if the file paths were known (i.e. `/share/backups`).  This is why, as noted above, automount is usually used in conjunction with scripting/programming.  The lack of visibility via CLI provides privacy and security, but the resources are still available as needed (and usually accessed via scripts/programs).
 
 ## Conclusion
-Whether choosing to permanently mount or automount NFS storage, it is a critical component of enterprise computing and adminstrators should be comfortable with accessing network storage.  It extends the power of infrastructure and is a key component in enterprise-grade server administration.
+Whether choosing to permanently mount or automount NFS storage, it is a critical component of enterprise computing and administrators should be comfortable with accessing network storage.  It extends the power of infrastructure and is a key component in enterprise-grade server administration.
 
 > In case you missed it above, [Serving Up Network Storage]({{< ref "/networkFileShareServer.md" >}}) contains the details on how to set up the share drive.
 

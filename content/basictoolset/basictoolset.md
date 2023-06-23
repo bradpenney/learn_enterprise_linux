@@ -11,10 +11,10 @@ One of the nicest things about Linux is that it is largely self-documented.  If 
 
 [Generating the Manual]({{< ref "/generatingManPages.md" >}})
 
-[Linux Filesystem Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}})
+[Linux File System Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}})
 
 ## Command Line Basics
-The Command Line (CLI) may be a bit intimidating for those coming from a more Graphical User Interface (GUI) background.  In time, many users find the the CLI is actually a very comfortable and powerful way to get difficult things done!
+The Command Line (CLI) may be a bit intimidating for those coming from a more Graphical User Interface (GUI) background.  In time, many users find the CLI is actually a very comfortable and powerful way to get difficult things done!
 
 [Enterprise Command Line Shells]({{< ref "/shells.md" >}})
 
