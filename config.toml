@@ -50,6 +50,10 @@ disableKinds = ["section"]
   # And you can even create generic menu
 [menu]
   [[menu.main]]
+    identifier  = "/automation"
+    name        = "/automation"
+    url         = "/automation/automation"
+  [[menu.main]]
     identifier = "/basictoolset"
     name       = "/basicToolset"
     url        = "/basictoolset/basictoolset"
@@ -69,7 +73,7 @@ disableKinds = ["section"]
  #   identifier = "/security"
  #   name       = "/security"
  #   url        = "/security/security"
-  [[menu.main]]
-    identifier = "/scripting"
-    name       = "/scripting"
-    url        = "/scripting/scripting"
+ # [[menu.main]]
+ #   identifier = "/scripting"
+ #   name       = "/scripting"
+ #   url        = "/scripting/scripting"
