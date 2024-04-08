@@ -5,7 +5,7 @@ draft: false
 ---
 
 ## The Self-Documenting Operating System
-One of the nicest things about Linux is that it is largely self-documented.  If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), its very likely that the operating system itself will provide the answers.
+One of the best things about Linux is that it is primarily self-documented. If someone is familiar with all the ways to find help within Linux (assuming sufficient patience and time), the operating system itself will likely provide the answers.
 
 [Finding Help in Linux]({{< ref "/findingHelpInLinux.md" >}})
 
@@ -14,7 +14,7 @@ One of the nicest things about Linux is that it is largely self-documented.  If 
 [Linux File System Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}})
 
 ## Command Line Basics
-The Command Line (CLI) may be a bit intimidating for those coming from a more Graphical User Interface (GUI) background.  In time, many users find the CLI is actually a very comfortable and powerful way to get difficult things done!
+The Command Line (CLI) may be intimidating for those from a more Graphical User Interface (GUI) background. However, many users eventually find that the CLI is actually a very comfortable and powerful way to get difficult things done!
 
 [Enterprise Command Line Shells]({{< ref "/shells.md" >}})
 
@@ -25,7 +25,7 @@ The Command Line (CLI) may be a bit intimidating for those coming from a more Gr
 [Shell History]({{< ref "/shellHistory.md" >}})
 
 ## Manipulating Files
-In Linux, everything is a file.  Being able to effectively view and manipulate files is a crucial skill that unlocks all the other goodness that Linux has to offer.
+In Linux, everything is a file. Effectively viewing and manipulating files is a crucial skill that unlocks all the other goodness that Linux has to offer.
 
 [Command Line Text Editors]({{< ref "/textEditors.md" >}})
 

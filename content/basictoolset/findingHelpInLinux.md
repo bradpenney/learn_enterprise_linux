@@ -4,11 +4,11 @@ date: 2023-03-15T09:50:48-03:00
 draft: false
 ---
 
-Linux is renowned for its robust documentation and helpful resources that can assist users in mastering the command line interface. This brief article explores various methods to find help within the Linux operating system, making it easier for beginners to navigate their way through the vast world of Linux commands and utilities.
+Linux is renowned for its robust documentation and helpful resources that can assist users in mastering the command-line interface. This brief article explores various methods for finding help within the Linux operating system, making it easier for beginners to navigate the vast world of Linux commands and utilities.
 
 ## 1. The Manual Pages (`man`)
 
-The first and foremost resource for finding help in Linux is the manual pages, often abbreviated as `man`` pages. These pages contain detailed documentation for nearly every command and utility available in the Linux environment. To access a manual page for a specific command, simply open your terminal and type:
+The first and foremost resource for finding help in Linux is the manual pages, often abbreviated as `man` pages. These pages contain detailed documentation for nearly every command and utility available in the Linux environment. To access a manual page for a specific command, open your terminal and type:
 
 ``` bash
 man <command>
@@ -23,7 +23,7 @@ man lvcreate
 Results in:
 ![man lvcreate](https://learn-enterprise-linux.com/images/manLVCreate.png)
 
-This command will display a comprehensive manual page with information about the `lvcreate` command, its options, and usage instructions.
+This command will display a comprehensive manual page with information about the `lvcreate` command, including options and usage instructions.
 
 ### Navigating the Manual Pages
 
