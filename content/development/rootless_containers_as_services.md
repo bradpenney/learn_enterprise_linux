@@ -20,7 +20,7 @@ Now, if the user `brad` enables a `systemd` service (as per below), it will star
 
 ## Create a Systemd Service to Control a Rootless Container
 
-Logged in as the linger-enabled user and with a container already running (see [Introducing Podman]({{< siteurl >}}/development/introducingPodman.md) for an example), issue the following commands:
+Logged in as the linger-enabled user and with a container already running (see [Introducing Podman]({{< ref "introducingPodman.md" >}}) for an example), issue the following commands:
 
 ``` bash
 mkdir ~/.config/systemd/user # create a directory to store the systemd files
@@ -45,5 +45,5 @@ systemctl --user enable container-nextcloud.service
 
 Rebooting the server should now result in the container starting automatically.  This can be validated with a simple `ps -ef | grep nextcloud` or `podman ps | grep nextcloud`.  
 
-> Depending on the application setup, it may be necessary to repeat this process and even edit the `systemd` service files to ensure the containers start in the correct order to resolve their dependencies on each other (outside the scope of this article).  For example, the container setup in [Introducing Podman]({{< siteurl >}}/development/introducingPodman.md) requires that the MariaDB container be started before the NextCloud container.
+> Depending on the application setup, it may be necessary to repeat this process and even edit the `systemd` service files to ensure the containers start in the correct order to resolve their dependencies on each other (outside the scope of this article).  For example, the container setup in [Introducing Podman]({{< siteurl "introducingPodman.md" >}}) requires that the MariaDB container be started before the NextCloud container.
 
