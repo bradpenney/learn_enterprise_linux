@@ -1,4 +1,4 @@
-baseurl      = ""
+baseurl      = "https://learn-enterprise-linux.com"
 title        = "Learn Enterprise Linux"
 languageCode = "en-us"
 theme        = "hello-4s3ti"
@@ -23,7 +23,7 @@ disableKinds = ["section"]
 
   # Metadata mostly used in document's head
   description = "Exploring Critical Enterprise Linux Skills"
-  keywords = "linux, enterprise"
+  keywords = ""
   images = [""]
 
 [taxonomies]
@@ -34,12 +34,12 @@ disableKinds = ["section"]
 [languages]
   [languages.en]
     title = "Learn Enterprise Linux"
-    keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
     [languages.en.params]
       subtitle = "Exploring Critical Enterprise Linux Skills"
       readOtherPosts = "Read other posts"
+      keywords = "linux, enterprise"
     [languages.en.params.logo]
       logoText = "learn-enterprise-linux"
       logoHomeLink = "https://learn-enterprise-linux.com"
