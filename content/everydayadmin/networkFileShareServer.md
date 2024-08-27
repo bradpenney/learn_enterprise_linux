@@ -6,7 +6,7 @@ draft: false
 
 One of the best features about having a server is the ability to share storage with client systems - a Network File System (NFS).  This is useful in many different enterprise computing scenarios - some really common examples include user home directories in an LDAP system, or application accessing data in shared storage, or many servers writing logs to one central location.  The use cases are really endless, and luckily, setting up a network share is remarkably easy.
 
-> This article only covers setting up a share, see [Accessing Network Storage]({{< ref "/accessingNetworkStorage.md" >}}) for details on how to access the storage from a client.
+> This article only covers setting up a share, see [Accessing Network Storage]({{< ref "accessingNetworkStorage.md" >}}) for details on how to access the storage from a client.
 
 Of course, the prerequisite to this activity is having `root` access - which is why this falls under the "EveryDay Admin" section.
 
@@ -20,7 +20,7 @@ apt install nfs-kernel-server # Debian Family
 ```
 
 ## Step 2: Create an Export Listing
-The export listing itself defines which directories should be shared.  It is very unlikely that the entire system will be shared, the much more common scenario is to create a shared space such as `/share`, which may or may not be mounted on an entirely different storage unit (see [Adding Storage to Linux]({{< ref "/addingStorageToLinux.md" >}}) and [Logical Volume Management Basics]({{< ref "/lvmBasics.md" >}}) for more info).
+The export listing itself defines which directories should be shared.  It is very unlikely that the entire system will be shared, the much more common scenario is to create a shared space such as `/share`, which may or may not be mounted on an entirely different storage unit (see [Adding Storage to Linux]({{< ref "addingStorageToLinux.md" >}}) and [Logical Volume Management Basics]({{< ref "lvmBasics.md" >}}) for more info).
 
 The export listing is defined in `/etc/exports`, a sample will look like this:
 ``` bash
@@ -61,4 +61,4 @@ Export list for homeServer:
 /sharedSpace *
 /sharedLogs *
 ```
-> See [Accessing Network Storage]({{< ref "/accessingNetworkStorage.md" >}}) for details on how to access the storage from a client. 
+> See [Accessing Network Storage]({{< ref "accessingNetworkStorage.md" >}}) for details on how to access the storage from a client. 

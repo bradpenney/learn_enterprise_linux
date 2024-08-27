@@ -6,7 +6,7 @@ draft: false
 
 A key component of enterprise computing is sharing of data and information between computers.  Network Files Systems (NFS) allow client systems to draw on or add to information stored on servers - this has a variety of use cases such as applications writing logs, sharing data from a database, or user home directories.  Whatever the use case, NFS makes many everyday administration tasks easier.
 
-> This article will cover accessing an NFS that is already shared out from the server.  See  [Serving Up Network Storage]({{< ref "/networkFileShareServer.md" >}}) for details on how to set up the share drive.
+> This article will cover accessing an NFS that is already shared out from the server.  See  [Serving Up Network Storage]({{< ref "networkFileShareServer.md" >}}) for details on how to set up the share drive.
 
 ## Finding an NFS Share
 
@@ -26,7 +26,7 @@ Export list for homeServer:
 Once located, the next step is to determine the appropriate way to set up access - permanent or automount?
 
 ## Option 1: Permanently Mounted
-Permanently mounted means the client system will always show the NFS system in its  [File System Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}}).  This approach makes a lot of sense in many enterprise systems - it is desirable to always be able to see a target directory as if it were part of the client system.  There is one major drawback however - if the NFS server is unavailable, it may cause instability in the client.  Specifically, the client may boot very slowly (due to timeouts) or may not boot at all.  However, if the NFS server is meant to have 99.999% availability (the gold standard in enterprise computing), this shouldn't be an issue.
+Permanently mounted means the client system will always show the NFS system in its  [File System Hierarchy]({{< ref "linuxFilesystemHierarchy.md" >}}).  This approach makes a lot of sense in many enterprise systems - it is desirable to always be able to see a target directory as if it were part of the client system.  There is one major drawback however - if the NFS server is unavailable, it may cause instability in the client.  Specifically, the client may boot very slowly (due to timeouts) or may not boot at all.  However, if the NFS server is meant to have 99.999% availability (the gold standard in enterprise computing), this shouldn't be an issue.
 
 The software needed to access a permanently mounted NFS share depends on the Linux family:
 
@@ -100,5 +100,5 @@ In the above example, `homeServer` is serving up `/sharedSpace`, meaning all the
 ## Conclusion
 Whether choosing to permanently mount or automount NFS storage, it is a critical component of enterprise computing and administrators should be comfortable with accessing network storage.  It extends the power of infrastructure and is a key component in enterprise-grade server administration.
 
-> In case you missed it above, [Serving Up Network Storage]({{< ref "/networkFileShareServer.md" >}}) contains the details on how to set up the share drive.
+> In case you missed it above, [Serving Up Network Storage]({{< ref "networkFileShareServer.md" >}}) contains the details on how to set up the share drive.
 

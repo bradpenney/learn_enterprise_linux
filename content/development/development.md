@@ -7,9 +7,9 @@ draft: false
 ## Application Development
 One of the primary objectives of Enterprise Linux systems is to support application development and hosting.
 
-[Introducing Podman]({{< ref "/introducingPodman.md" >}})
+[Introducing Podman]({{< ref "introducingPodman.md" >}})
 
-[Running Rootless Containers As Services]({{< ref "/rootless_containers_as_services.md" >}})
+[Running Rootless Containers As Services]({{< ref "rootless_containers_as_services.md" >}})
 
 
 ## Kernel Development

@@ -4,13 +4,13 @@ date: 2023-04-13T18:51:11-03:00
 draft: false 
 ---
 
-While [adding storage (directly) to Linux]({{< ref "/addingStorageToLinux.md" >}}) is an important concept for all Linux administrators to understand, directly adding and using individual disks is rarely used in an enterprise-grade Linux system.  Enterprise computing needs a much more flexible solution - enter **Logical Volume Management (LVM)**.  This article will explore the three basic components of LVM - physical volumes, volume groups, and logical volumes.
+While [adding storage (directly) to Linux]({{< ref "addingStorageToLinux.md" >}}) is an important concept for all Linux administrators to understand, directly adding and using individual disks is rarely used in an enterprise-grade Linux system.  Enterprise computing needs a much more flexible solution - enter **Logical Volume Management (LVM)**.  This article will explore the three basic components of LVM - physical volumes, volume groups, and logical volumes.
 
 > Note: This demo is performed on a Rocky Linux installation.  This is downstream of RHEL9 - there is no customer support available from Red Hat.  Further, this demo is performed by `root` - most (all?) storage manipulation jobs should be performed by `root` in enterprise-grade computing.
 
 ## Connect a New Disks
 
-The procedure to add a new physical disk is outlined in [Adding Storage to Linux - Connect a New Disk]({{< ref "/addingStorageToLinux.md#connect-a-new-disk" >}}).  The difference here is that Logical Volume Management makes sense when using several disks, not just one or two additional disks.  For the demo below, four (4) 5GiB disks were added, and RAID5 was used - so now the data has redundancy built in (a much bigger topic in and of itself!).
+The procedure to add a new physical disk is outlined in [Adding Storage to Linux - Connect a New Disk]({{< ref "addingStorageToLinux.md#connect-a-new-disk" >}}).  The difference here is that Logical Volume Management makes sense when using several disks, not just one or two additional disks.  For the demo below, four (4) 5GiB disks were added, and RAID5 was used - so now the data has redundancy built in (a much bigger topic in and of itself!).
 
 ![LVM Disks Added]({{< siteurl >}}/images/lvmDisks.png)
 
@@ -83,7 +83,7 @@ Once the logical volume is created, its ready to be mounted to the system.
 
 ### Make a File System on the Logical Volume
 
-Similar to creating partitions from separate disks and mounting them to the [Linux File System Hierarchy]({{< ref "/linuxFilesystemHierarchy.md" >}}), the Logical Volume will need a file system.  The location, by default, will be `/dev/<volumeGroupName>/<logicalVolumeName>`, and the standard `mkfs.<type>` will work here:
+Similar to creating partitions from separate disks and mounting them to the [Linux File System Hierarchy]({{< ref "../basictoolset/linuxFilesystemHierarchy.md" >}}), the Logical Volume will need a file system.  The location, by default, will be `/dev/<volumeGroupName>/<logicalVolumeName>`, and the standard `mkfs.<type>` will work here:
 
 ``` shell
 #mkfs.<fstype> <location>
@@ -131,6 +131,6 @@ Ensure that the mount point is accessible for creating files:
 
 ![Create a File on /lvmDemo]({{< siteurl >}}/images/touchLVMDemo.png)
 
-> In this demo, the logical volume is owned by `root` and will need its permissions changed to be useful for other users.  Check out [Basic Linux Permissions]({{< ref "/basicPermissions.md"  >}}) for more details on this.
+> In this demo, the logical volume is owned by `root` and will need its permissions changed to be useful for other users.  Check out [Basic Linux Permissions]({{< ref "basicPermissions.md"  >}}) for more details on this.
 
 Finally, a quick reboot will re-validate that the LVM and `/etc/fstab` configurations are working correctly.  Happy LVMing!

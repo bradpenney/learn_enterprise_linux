@@ -10,19 +10,19 @@ Shell scripting has often been referred to as "the glue that holds the Internet 
 ### Ansible
 Ansible is a powerful open-source automation tool commonly used by system administrators and DevOps professionals to simplify and streamline various IT tasks. Its primary purpose is to automate repetitive tasks like software provisioning, configuration management, application deployment, and system orchestration.
 
-[Ansible Key Concepts]({{< ref "/ansibleKeyConcepts.md" >}})
+[Ansible Key Concepts]({{< ref "ansibleKeyConcepts.md" >}})
 
 ## Shell Scripting
 ### The Basics
 The concepts and skills used in shell scripting are similar to many other languages - particularly Python (often used as a replacement for shell scripting) or PowerShell (often seen as Microsoft's version of shell scripting!).
 
-[Scripting "Hello World"]({{< ref "/scriptingHelloWorld.md" >}})
+[Scripting "Hello World"]({{< ref "scriptingHelloWorld.md" >}})
 
-[Make Decisions with `if/else` Statements]({{< ref "/ifElseStatements.md" >}})
+[Make Decisions with `if/else` Statements]({{< ref "ifElseStatements.md" >}})
 
-[Make Decisions with `case` Statements]({{< ref "/caseStatements.md" >}})
+[Make Decisions with `case` Statements]({{< ref "caseStatements.md" >}})
 
 ### Increasing Robustness 
 Once you have mastered the basics, its time to kick it up a notch and make your scripts a bit more robust.
 
-[Testing the Number of Parameters Passed to a Shell Script]({{< ref "/testingNumberOfParameters.md" >}})
+[Testing the Number of Parameters Passed to a Shell Script]({{< ref "testingNumberOfParameters.md" >}})

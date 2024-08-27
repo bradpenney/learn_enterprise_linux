@@ -4,7 +4,7 @@ date: 2023-04-06T07:59:35-03:00
 draft: false
 ---
 
-One of the very nice options available in shell scripting is the `case` statement.  The case statement allows the script to test many different conditionals much more efficiently (in terms of lines of code) than an `if/elif/else` statement (see [Decision Making - `if/else` Statements]({{< ref "/ifElseStatements.md" >}}) for further details).  
+One of the very nice options available in shell scripting is the `case` statement.  The case statement allows the script to test many different conditionals much more efficiently (in terms of lines of code) than an `if/elif/else` statement (see [Decision Making - `if/else` Statements]({{< ref "ifElseStatements.md" >}}) for further details).  
 
 > Shell's `case` statement is similar to the `switch` statement found in other programming languages (both of which are missing entirely from Python!)
 

@@ -28,7 +28,7 @@ echo "Hello World!"
 
 3. Save the file and exit using `:wq`
 
-4. Make the file executable by issuing the command `chmod 700 HelloWorld.sh` (see [Basic Permissions]({{< ref "/basicPermissions.md" >}}) for a more thorough explanation).
+4. Make the file executable by issuing the command `chmod 700 HelloWorld.sh` (see [Basic Permissions]({{< ref "../everydayadmin/basicPermissions.md" >}}) for a more thorough explanation).
 
 5. Run your file with `./HelloWorld.sh`:
 

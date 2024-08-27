@@ -7,14 +7,14 @@ draft: false
 ## Managing Users and File Permissions
 A critical skill for every administrator to master, managing users and file permissions are an everyday task on many Linux servers.
 
-[Basic Linux Permissions]({{< ref "/basicPermissions.md"  >}})
+[Basic Linux Permissions]({{< ref "basicPermissions.md"  >}})
 
 ## Managing Hardware
 
-[Adding Storage to Linux]({{< ref "/addingStorageToLinux.md" >}})
+[Adding Storage to Linux]({{< ref "addingStorageToLinux.md" >}})
 
-[Logical Volume Management Basics]({{< ref "/lvmBasics.md" >}})
+[Logical Volume Management Basics]({{< ref "lvmBasics.md" >}})
 
-[Serving Up Network Storage]({{< ref "/networkFileShareServer.md" >}})
+[Serving Up Network Storage]({{< ref "networkFileShareServer.md" >}})
 
-[Accessing Network Storage]({{< ref "/accessingNetworkStorage.md" >}})
+[Accessing Network Storage]({{< ref "accessingNetworkStorage.md" >}})
